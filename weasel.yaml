@@ -54,13 +54,13 @@ style:
   # 全局字体
   # 格式：字体1:起始码位:结束码位:字重:字形,字体2……，字体会依次 fallback
   # 详细设定请参考 <https://github.com/rime/weasel/wiki/字體設定>
-  # font_face: "苹方-简, PingFangSC, LXGW WenKai Mono, LXGW WenKai, Segoe UI Emoji, Microsoft YaHei, SF Pro, Noto Color Emoji"
-  # label_font_face: "苹方-简, PingFangSC, LXGW WenKai Mono, LXGW WenKai, Microsoft YaHei"       # 标签字体
-  # comment_font_face: "苹方-简, LXGW WenKai Mono, LXGW WenKai, Microsoft YaHei"     # 注释字
-  font_face: "LXGW WenKai Mono, LXGW WenKai, Segoe UI Emoji, Microsoft YaHei, SF Pro, Noto Color Emoji"
-  label_font_face: "Microsoft YaHei"       # 标签字体
+  # font_face: "PingFang SC, PingFangSC, LXGW WenKai Mono, LXGW WenKai, Segoe UI Emoji, Microsoft YaHei, SF Pro, Noto Color Emoji"
+  # label_font_face: "PingFang SC, PingFangSC, LXGW WenKai Mono, LXGW WenKai, Microsoft YaHei"       # 标签字体
+  # comment_font_face: "PingFang SC, LXGW WenKai Mono, LXGW WenKai, Microsoft YaHei"     # 注释字体
+  font_face: "Fira Code, Segoe UI Emoji, Noto Color Emoji, LXGW WenKai Mono, LXGW WenKai, Microsoft YaHei, SF Pro"
+  label_font_face: "Fira Code, Microsoft YaHei"       # 标签字体
   comment_font_face: "LXGW WenKai Mono, LXGW WenKai, Microsoft YaHei"     # 注释字体
-  font_point: 14                           # 全局字体字号
+  font_point: 13                           # 全局字体字号
   label_font_point: 9                      # 标签字体字号，不设定 fallback 到 font_point
   comment_font_point: 10                   # 注释字体字号，不设定 fallback 到 font_point
 
@@ -75,7 +75,7 @@ style:
   vertical_text_with_wrap: false           # 文本竖排模式下，自动换行：true；false
   vertical_auto_reverse: false             # 文本竖排模式下，候选窗口位于光标上方时倒序排列：true；false
 
-  label_format: "%s"                       # 标签字符：例如 %s. 效果为 1. 2. 3. ....
+  label_format: "%s."                       # 标签字符：例如 %s. 效果为 1. 2. 3. ....
   mark_text: ""                            # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示 Windows 11 输入法风格标记
   ascii_tip_follow_cursor: false           # 切换 ASCII 模式时，提示跟随鼠标，而非输入光标
   enhanced_position: true                  # 无法定位候选框时，在窗口左上角显示候选框：true；false
@@ -89,8 +89,8 @@ style:
   click_to_capture: false                  # 鼠标点击候选项，创建截图：true；false
 
   layout:
-    baseline: 0                            # 字号百分比，与 linespacing 一同设置可解决字体跳动问题，设置为 0 为禁用
-    linespacing: 0                         # 字号百分比，参考 <https://github.com/rime/weasel/pull/1177>
+    baseline: 100                          # 字号百分比，与 linespacing 一同设置可解决字体跳动问题，设置为 0 为禁用
+    linespacing: 140                       # 字号百分比，参考 <https://github.com/rime/weasel/pull/1177>
     align_type: center                     # 标签、候选文字、注解文字之间的相对对齐方式：top ; center ; bottom
     max_height: 0                          # 候选框最大高度，文本竖排模式下如高度超此尺寸则换列显示候选，设置为 0 不启用此功能
     max_width: 0                           # 候选框最大宽度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
