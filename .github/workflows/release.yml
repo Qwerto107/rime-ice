@@ -16,7 +16,7 @@ on:
 jobs:
   Release:
     runs-on: ubuntu-latest
-    if: github.repository == 'iDvel/rime-ice'
+    if: github.repository == 'Qwerto107/rime-ice'
 
     steps:
       - name: Checkout
